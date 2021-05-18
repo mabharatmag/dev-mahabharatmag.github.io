@@ -1,9 +1,9 @@
 <?php 
 
-$server = "Localhost via UNIX socket";
-$username = "satyajit";
-$password = 123456;
-$database = "mahabhar_comments";
+$server = "localhost";
+$username = "root";
+$password = "";
+$database = "mysql";
 
 $conn = mysqli_connect($server, $username, $password, $database);
 
@@ -12,3 +12,7 @@ if (!$conn) { // If Check Connection
 }
 
 ?>
+
+
+
+

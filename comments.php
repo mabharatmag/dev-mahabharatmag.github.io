@@ -1,6 +1,6 @@
 <?php 
 
-include 'config.php';
+require 'config.php';
 
 error_reporting(0); // For not showing any error
 
@@ -9,7 +9,7 @@ if (isset($_POST['submit'])) { // Check press or not Post Comment Button
 	$email = $_POST['email']; // Get Email from form
 	$comment = $_POST['comment']; // Get Comment from form
 
-	$sql = "INSERT INTO mahabhar_comments (name, email, comment)
+	$sql = "INSERT INTO comments (name, email, comment)
 			VALUES ('$name', '$email', '$comment')";
 	$result = mysqli_query($conn, $sql);
 	if ($result) {
@@ -21,13 +21,14 @@ if (isset($_POST['submit'])) { // Check press or not Post Comment Button
 
 ?>
 
-<!-- <!DOCTYPE html>
+
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet"  href="comments.css">
 
 	<title>Comment System in PHP - Pure Coding</title>
 </head>
@@ -75,4 +76,4 @@ if (isset($_POST['submit'])) { // Check press or not Post Comment Button
 		</div>
 	</div>
 </body>
-</html> -->
+</html>
