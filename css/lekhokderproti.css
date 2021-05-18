@@ -1,0 +1,21 @@
+html{
+    margin: 0;
+    background-color: thistle;
+}
+body{
+    background-image: url("/img/bck.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100vw auto;
+
+    
+}
+li{
+    margin: 2% 5%;
+    font-family: 'Bangla', Arial, sans-serif !important;
+    text-align: justify;
+    font-size: 20px;
+
+}
+
+

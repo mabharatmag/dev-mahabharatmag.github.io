@@ -1,0 +1,91 @@
+
+body{
+    background-color: azure;
+    font-family: 'Bangla', Arial, sans-serif !important;
+    margin: -1% 1%;
+
+}
+.container{
+    display:grid;
+    grid-template-columns: repeat(2, 50vw);
+
+}
+
+.grid1{
+    border-right: 1px solid crimson;
+    padding: 3%;
+    text-align: justify;
+    font-size: 18px;
+}
+.grid2{
+    
+    padding: 3%;
+    text-align: justify;
+    font-size: 18px;
+}
+
+
+@media only screen and (max-width: 300px)  {
+    .container{
+        display:grid;
+        grid-template-columns: repeat(1, 98vw);
+    
+    }
+    .grid1{
+        border-right: none;
+        
+    }
+}
+    
+@media only screen and  (min-width: 300px) and (max-width: 360px) {
+    .container{
+        display:grid;
+        grid-template-columns: repeat(1, 98vw);
+    
+    }
+    
+    .grid1{
+        border-right: none;
+        
+    }
+
+}
+
+ 
+@media only screen and (min-width: 360px) and (max-width: 411px) {
+    .container{
+        display:grid;
+        grid-template-columns: repeat(1, 98vw);
+    
+    }
+    .grid1{
+        border-right: none;
+        
+    }
+}
+
+@media only screen and (min-width: 411px) and (max-width: 765px) {
+    .container{
+        display:grid;
+        grid-template-columns: repeat(1, 98vw);
+    
+    }
+    .grid1{
+        border-right: none;
+        
+    }
+
+}
+
+
+@media only screen and (max-width: 766px) {
+    .container{
+        display:grid;
+        grid-template-columns: repeat(1, 98vw);
+    
+    }
+    .grid1{
+        border-right: none;
+        
+    }
+}

@@ -1,0 +1,47 @@
+html{
+    margin: 0;
+    background-color: thistle;
+}
+body{
+    background-image: url("/img/bck.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100vw auto;
+}
+
+p{
+    font-family: 'Bangla', Arial, sans-serif !important;
+    padding: 0px 50px;
+    line-height: 25px;
+    text-align: justify;
+    font-size: 20px;
+    color:black;
+    
+}
+
+li {
+    display: flex;
+    color: crimson;
+    justify-content: center;
+    align-self: center;
+    
+}
+
+li a{
+    list-style: none;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Bangla', Arial, sans-serif !important;
+    font-size: 20px;
+}
+
+li a:hover{
+    list-style: none;
+}
+li button a{
+    display: flex;
+    color: crimson;
+    justify-content: center;
+    align-self: center;
+}
+

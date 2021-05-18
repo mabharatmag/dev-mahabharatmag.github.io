@@ -1,0 +1,16 @@
+html{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: lavender;
+    text-align: center;
+    line-height: 30px;
+    /* border: 2px dotted crimson; */
+    width: 50vw;
+    margin: auto;
+    outline: crimson double 10px;
+    margin-top: 10px;
+   
+}
+
+ul li{
+    list-style-type: none;
+}

@@ -1,0 +1,139 @@
+html, body{
+    margin: 0%;
+    background-color: thistle;
+    font-family: 'Bangla', Arial, sans-serif !important;
+    
+        
+
+}
+a{
+    text-decoration: none;
+    font-size: 18px;
+    
+}
+
+
+font3{
+    font-family: 'Bangla', Arial, sans-serif !important;
+    font-size: 40px;
+    font-weight: bold;
+    
+}
+
+font4{
+    font-family: 'Bangla', Arial, sans-serif !important;
+    font-size: 22px;
+    
+    color: #cb5c5c;
+}
+
+font5{
+    font-family: 'Bangla', Arial, sans-serif !important;
+    font-size: 18px;
+}
+
+
+
+
+.columnold{
+    display: flex;
+    padding: 15px;
+    /* align-items: center; */
+    justify-content: center;
+    
+}
+  
+ .columnold1, .columnold2, .columnold3{
+     width: 33vw;
+     text-align: center;
+     
+ } 
+  @media only screen and (max-width: 300px)  {
+
+   
+    .menu h3{
+        color: crimson;
+        text-align: center;
+    }
+
+    .columnold{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .columnold1, .columnold2, .columnold3{
+        width: 100vw;
+        
+    } 
+}
+    
+@media only screen and  (min-width: 300px) and (max-width: 360px) {
+    
+    .menu h3{
+        color: crimson;
+        text-align: center;
+    }
+    .columnold{
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+    }
+    .columnold1, .columnold2, .columnold3{
+        width: 100vw;
+        
+    }
+}
+
+ 
+@media only screen and (min-width: 360px) and (max-width: 411px) {
+    
+    .menu h3{
+        color: crimson;
+        text-align: center;
+    }   
+    .columnold{
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+    }
+    .columnold1, .columnold2, .columnold3{
+        width: 100vw;
+        
+    }
+}
+
+@media only screen and (min-width: 411px) and (max-width: 765px) {
+    
+.menu h3{
+    color: crimson;
+    text-align: center;
+}
+.columnold{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+.columnold1, .columnold2, .columnold3{
+    width: 100vw;
+    
+}
+}
+
+
+@media only screen and (max-width: 766px) {
+    
+    .menu h3{
+        color: crimson;
+        text-align: center;
+    }
+    .columnold{
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+    }
+    .columnold1, .columnold2, .columnold3{
+        width: 100vw;
+        
+    }
+
+}

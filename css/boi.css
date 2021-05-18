@@ -1,0 +1,35 @@
+html, body{
+    font-family: 'Bangla', Arial, sans-serif !important;
+   
+    background-color: #f5fffa;
+    /* width: 90vw; */
+    height: 100vh;
+    margin: 0px;
+    padding: 25px;
+}
+
+
+font3{
+    font-family: 'Bangla', Arial, sans-serif !important;
+    font-size: 40px;
+    font-weight: bold;
+    
+}
+
+font4{
+    font-family: 'Bangla', Arial, sans-serif !important;
+    font-size: 22px;
+    
+    color: #cb5c5c;
+}
+
+font5{
+    font-family: 'Bangla', Arial, sans-serif !important;
+    font-size: 18px;
+}
+
+p{
+    font-size: 20px;
+    text-align: justify;
+   
+}

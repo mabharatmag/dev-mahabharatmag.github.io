@@ -1,0 +1,45 @@
+html, body{
+    font-family: 'Bangla', Times  , sans-serif !important;
+   
+    background-color: #f5fffa;
+    /* width: 100vw; */
+    height: 100vh;
+    margin: 5px;
+    padding: 5px;
+}
+
+
+font3{
+    font-family: 'Bangla', Times  , sans-serif !important;
+    font-size: 52px;
+    /* font-weight: bold; */
+    padding-left: 15px;
+    
+}
+
+font4{
+    font-family: 'Bangla', Times  , sans-serif !important;
+    font-size: 27px;
+    padding-left: 15px;
+    color: #cb5c5c;
+}
+
+font5{
+    font-family: 'Bangla', Times  , sans-serif !important;
+    font-size: 18px;
+    padding-left: 15px;
+}
+
+p{
+    font-size: 20px;
+    text-align: justify;
+   /* padding: 35px; */
+}
+
+introduction{
+    font-family: 'Bangla', Times  , sans-serif !important;
+    font-size: 18px;
+    padding: 5px 85px 0px 85px;
+    font-style: italic;
+    text-align: center;
+}

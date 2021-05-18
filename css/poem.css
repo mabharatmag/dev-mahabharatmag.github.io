@@ -1,0 +1,166 @@
+*{
+    box-sizing: border-box;
+  }
+
+html, body{
+    width: 100%;
+    margin: 0%;
+    background-color: #afeeee;
+    font-family: 'Bangla', Arial, sans-serif !important;
+
+}
+
+.banner{
+    
+    width: 100%;
+    height: auto;
+    background-color: darkcyan;
+    color: ivory;
+    justify-content: center;
+    
+}
+
+
+.flex1,.flex2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.col1, .col2,.col3{
+    width: 33vw;
+    padding: 20px;
+}
+
+font1{
+    font-size: 30px;
+    font-weight: 550;
+}
+
+
+font2{
+    font-size: 25px;
+}
+font3{
+    font-size: 23px;
+    font-weight: 550;
+}
+
+font4{
+    font-size: 18px;
+}
+
+@media screen and (max-width: 600px) {
+    .banner, .row {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        flex-wrap: wrap;
+        margin: 0%;
+        padding: 0%;
+        justify-content: left;
+    }
+
+   
+    .col1, .col2,.col3{
+        width: 98vw;
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .banner, .row {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        flex-wrap: wrap;
+        margin: 0%;
+        padding: 0%;
+        justify-content: left;
+    }
+
+    
+    .col1, .col2,.col3{
+        width: 98vw;
+        text-align: left;
+    }
+    
+}
+
+@media only screen and (min-width: 300px) and (max-width: 360px) {
+    .banner,.row {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        flex-wrap: wrap;
+        margin: 0%;
+        padding: 0%;
+        justify-content: left;
+    }
+
+    
+    
+    .col1, .col2,.col3{
+        width: 98vw;
+        text-align: left;
+    }
+    
+}
+
+@media only screen and (min-width: 360px) and (max-width: 411px) {
+    .banner,.row {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        flex-wrap: wrap;
+        margin: 0%;
+        padding: 0%;
+        justify-content: left;
+    }
+
+    
+    .col1, .col2,.col3{
+        width: 98vw;
+        text-align: left;
+    }
+    
+}
+
+
+
+@media only screen and (max-width: 766px) {
+    .banner, .row {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        flex-wrap: wrap;
+        margin: 0%;
+        padding: 0%;
+        justify-content: left;
+    }
+
+   
+    .col1, .col2,.col3{
+        width: 98vw;
+        text-align: left;
+    }
+   
+}
+
+@media only screen and (max-width: 1025px) {
+    .banner, .row {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        flex-wrap: wrap;
+        margin: 0%;
+        padding: 0%;
+        justify-content: left;
+    }
+
+   
+    .col1, .col2,.col3{
+        width: 98vw;
+        text-align: left;
+    }
+   
+} 
