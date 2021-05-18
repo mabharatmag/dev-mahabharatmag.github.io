@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+<style>
+  .block-relative-left {
+  display: block;
+  position: relative;
+  float: left;
+}
+
+.block-relative-right {
+  display: block;
+  position: relative;
+  float: right;
+}
+
+.flexbox {
+  display: -webkit-box;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-flow: row wrap;
+  align-content: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  float: left;
+}
+
+#topNav {
+  background: #000;
+  width: 100%;
+  top: -50px;
+  left: 0;
+  display: block;
+  position: fixed;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  z-index: 100;
+}
+#topNav a, #topNav button {
+  background: transparent;
+  height: 50px;
+  margin: 0;
+  color: #00bcd4;
+  font: 400 16px "Consolas";
+  text-align: center;
+}
+#topNav a:hover, #topNav button:hover {
+  background: #4d4d4d;
+  color: #fff;
+}
+#topNav a:focus, #topNav button:focus {
+  background: #00bcd4;
+  color: #000;
+}
+
+#topNav a, #btnMenu, #btnSearch {
+  width: 50px;
+}
+
+#btnMenu, .fa-times {
+  display: none;
+}
+
+.btn-list {
+  width: 100px;
+}
+
+.search {
+  background: #eee;
+  width: 0;
+  height: 50px;
+  top: 0;
+  right: 50px;
+  display: block;
+  position: absolute;
+  opacity: 0;
+}
+
+input {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  font: 400 16px "Consolas";
+  text-align: center;
+  border: none;
+}
+
+.desc, .blank {
+  width: 100%;
+  min-height: 100%;
+  font: 900 32px "Consolas";
+}
+
+.blank {
+  background: #eee;
+}
+
+.show-search {
+  -webkit-animation: search 0.5s ease both;
+          animation: search 0.5s ease both;
+}
+@-webkit-keyframes search {
+  to {
+    width: 150px;
+    opacity: 1;
+  }
+}
+@keyframes search {
+  to {
+    width: 150px;
+    opacity: 1;
+  }
+}
+.visible {
+  display: inline-block;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  #btnMenu {
+    display: -webkit-box;
+    display: flex;
+  }
+
+  .menu {
+    background: #333;
+    width: 100%;
+    top: 50px;
+    display: none;
+    position: absolute;
+  }
+  .menu button {
+    width: 100%;
+  }
+
+  .show-menu {
+    display: block;
+  }
+}
+
+</style>
+</head>
+<body>
+  <nav id="topNav">
+    <div class="block-relative-left">
+      <a class="flexbox" href="#"><i class="fa fa-home"></i></a>
+      <button class="flexbox" id="btnMenu" onclick="openMenu()">
+        <i class="fa fa-bars"></i>
+        <i class="fa fa-times"></i>
+      </button>
+    </div>
+    <div class="block-relative-left menu" id="thisMenu">
+      <button class="flexbox btn-list">Menu 1</button>
+      <button class="flexbox btn-list">Menu 2</button>
+      <button class="flexbox btn-list">Menu 3</button>
+      <button class="flexbox btn-list">Menu 4</button>
+      <button class="flexbox btn-list">Menu 5</button>
+    </div>
+    <div class="block-relative-right">
+      <button class="flexbox" id="btnSearch" onclick="openSearch()">
+        <i class="fa fa-search"></i>
+        <i class="fa fa-times"></i>
+      </button>
+      <form class="search" id="thisSearch">
+        <input type="text" placeholder="Search"/>
+      </form>
+    </div>
+  </nav>
+  <div class="flexbox desc">Scroll This Page</div>
+  <div class="flexbox blank">It's Cool...</div>
+  <div class="column3">
+
+    <p style="text-align: center; padding: 20px;">
+      <font3>নতুন লেখা</font3><br>
+     <font4 style="color: ivory;">ডিসেম্বর ২০২০ </font4><br><br>
+     <font5>[পড়ার জন্য নামের ওপরে ক্লিক করুন] </font5><br><br>
+     <a style="text-decoration: none; color: ivory;" href="malda.html"><font5>মালদা জেলার সাম্প্রতিক নদীভাঙন: একটি আখ্যান - পর্ব ১</font5></a><br><br>
+     <a style="text-decoration: none; color: ivory;" href="france.html"><font5>ফ্রান্সে রাষ্ট্র বনাম ইসলামি মৌলবাদীদের লড়াই</font5></a><br><br>
+     <a style="text-decoration: none; color: ivory;" href="maradona.html"><font5>একটি দুষ্প্রাপ্য ছবি, বাঙালিয়ানা ও দিয়েগো মারাদোনা</font5></a><br><br>
+     <font4 style="color: ivory;"><b>গল্প</b></font4><br><br>
+     <a style="text-decoration: none; color: ivory;" href="anko.html"><font5>অঙ্ক মানেই বিয়োগ </font5></a><br><br>
+     <font4 style="color: ivory;"><b>অনুবাদ</b></font4><br><br>
+     <a style="text-decoration: none; color: ivory;" href="blassim.html"><font5>পরিত্যাক্ত গ্রামটি</font5></a><br><br>
+     <font4 style="color: ivory;"><b>কবিতা</b></font4><br><br>
+     <a style="text-decoration: none; color: ivory;" href="poemweb1.html"><font5>দীপাঞ্জনা শর্মা | অমিত চক্রবর্তী </font5></a><br><br>
+     <font3>অন্য লেখাগুলি </font3><br>
+     
+     
+     <font5><a style="text-decoration: none; color: ivory;" href="simanta.html">অক্ষমের দম্ভ এবং... </a></font5><br><br>
+      <font5><a style="text-decoration: none; color: ivory;" href="corona_am.html">করোনা ভাইরাস-স্বাস্থ্য রাজনীতি
+          অর্থনীতি </a></font5><br><br>
+      <font5><a style="text-decoration: none; color: ivory;" href="nep.html">জাতীয় শিক্ষানীতি ২০২০: কিছু ভাবনা </a>
+      </font5><br><br>
+      <font5><a style="text-decoration: none; color: ivory;" href="ppm.html">এন আর সি ও সি এ বি (এখন সি এ এ) উভয়ই
+          বিয়োজন প্রক্রিয়া</a></font5><br><br>
+      <font5><a style="text-decoration: none; color: ivory;" href="amiya.html">নাগরিকপঞ্জী</a></font5><br><br>
+      <font5><a style="text-decoration: none; color: ivory;" href="picnic.html">বাদল সরকারের চড়ুইভাতি: যুদ্ধবিরোধী
+          আখ্যান</a></font5><br><br>
+      <font5><a style="text-decoration: none; color: ivory;" href="nabal.html">নাবাল কথা</a></font5><br><br>
+      <font5><a style="text-decoration: none; color: ivory;" href="rajniti.html">রাজনীতি গণতন্ত্র বর্তমান ও আমরা</a>
+      </font5><br><br>
+      <font5><a style="text-decoration: none; color: ivory;" href="pralay.html">প্রলয়</a></font5><br><br>
+      <font5><a style="text-decoration: none; color: ivory;" href="satya.html">সত্য উত্তর সত্য ও রাজনৈতিক
+          ভোজবাজি</a></font5><br><br>
+      <font4 style="color: ivory;"><b>গল্প</b></font4><br><br>
+      <font5><a style="text-decoration: none; color: ivory;" href="choitradin.html">তখন চৈত্রদিন</a></font5><br><br>
+      <font4 style="color: ivory;"><b>অনুবাদ</b></font4><br><br>
+      <font5><a style="text-decoration: none; color: ivory;" href="asamia.html">কাহিনীর মতো (অসমিয়া)</a></font5>
+      <br><br>
+      <font5><a style="text-decoration: none; color: ivory;" href="samadhi.html">সমাধি ফলক (কাশ্মিরী)</a></font5>
+      <br><br>
+      <font5><a style="text-decoration: none; color: ivory;" href="american.html">নিগৃহীতা না হতে চাওয়া এক আমেরিকান
+          নারী</a></font5>
+    </p><br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <font5 style="color: ivory; text-align: center;">[আরো লেখা পড়ার জন্য 'লেখাপত্তর' বিভাগ দেখুন] </font5>
+    <br>
+    <br>
+    <br>
+    <img src="img/ta2.jpg" alt="" class="responsive" style="margin-left: -8px;">
+  </div>
+
+  <a class="me" href="https://codepen.io/uzcho_/pens/popular/?grid_type=list" target="_blank" style="color:#000"></a>
+
+  
+  <script>
+    window.onscroll = function () {
+  myScroll();
+};
+
+function myScroll() {
+  _scroll("topNav", "slideDown", "-50px");
+}
+
+function openSearch() {
+  _drop("thisSearch", "btnSearch", "show-search");
+}
+
+function openMenu() {
+  _drop("thisMenu", "btnMenu", "show-menu");
+}
+
+  </script>
+</body>
+</html>
